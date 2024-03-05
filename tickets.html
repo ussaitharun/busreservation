@@ -1,0 +1,438 @@
+<html>
+    <head>
+        <style>
+            nav{
+                display:flex;
+                justify-content:space-between;
+                background-color:#34568f;
+
+            
+            }
+            .t1{
+                margin-top:30;
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                margin-left:10px;
+              
+            }
+            .t1::first-letter{
+                color:white;
+                font-size:30px;
+
+            }
+    
+        
+
+            nav ul li{
+                display:inline-block;
+                text-decoration:none;
+                color:white;
+                padding:20px;
+                margin-right:30px;
+                font-family:serif;
+                font-size: larger;
+                transition-duration:1s;
+            
+        
+            
+
+            }
+            nav ul li:hover{
+                
+                border:2px solid black;
+                border-radius:330px 10px 30px 10px;
+                transition-duration:2s;
+                color:#34568f;
+                background-color:white;
+            }
+            .title{
+                font-size: large;
+                font-weight: 300px;
+                border-left:5px red solid;
+                font-size:50px;
+                opacity:0;
+                animation-name:pappu4;
+                animation-duration:1s;
+                animation-fill-mode:forwards;
+            }
+            @keyframes pappu4 {
+                100%{
+                    opacity:1;
+                    animation-duration:3s;
+                }
+
+                
+            }
+        
+            .t{
+                margin-top:10px;
+                display:flex;
+                flex-wrap: wrap;
+                background-color: #34568f;
+                height:1000px;
+                padding:10px;
+                justify-content:space-around;
+
+             
+            
+            }
+            .t img{
+                border-radius:10px;
+                box-shadow:2px 2px 10px black;
+                transition-duration:1s;
+            }
+            .t img:hover{
+                border-radius:20px;
+                box-shadow:2px 2px 10px black;
+                transition-timing-function:ease;
+                transition-duration:2s;
+                filter: grayscale(100);
+                transform:scale(1.1);
+            }
+            
+            
+            .t a{
+                text-decoration:none;
+                color:white;
+                display:inline-block;
+                background-color: black;
+                border-radius:10px;
+                font-family:sans-serif;
+                transition-duration:1s;
+                
+
+
+
+            }
+            .t .t1b{
+                font-family:verdana;
+            }
+            .t a:hover{
+                background-color:white;
+                color:black;
+                border-radius:20px 2px 20px 2px;
+                transition-duration:2s;
+                
+            }
+            .t .a1{
+                background-color: white;
+                color:black;
+                height:30;
+            
+
+            }
+            .t{
+                margin-top:10px;
+                display:flex;
+                flex-wrap: wrap;
+                background-color: #34568f;
+                height:1000px;
+                padding:50px;
+                justify-content:space-around;
+                animation-name:pappu5;
+                opacity:0;
+                animation-duration:2s;
+                animation-fill-mode:forwards;
+                transition-timing-function:ease;
+
+             
+            
+            }
+            @keyframes pappu5 {
+                100%{
+                    opacity:1;
+                    animation-duration:3s;
+                }
+
+                
+            }
+    
+            .t img{
+                border-radius:10px;
+                box-shadow:2px 2px 10px black;
+                transition-duration:1s;
+            }
+            .t img:hover{
+                border-radius:40px;
+                box-shadow:2px 2px 10px black;
+                transition-timing-function:ease;
+                transition-duration:2s;
+                filter: grayscale(100);
+                transform:scale(1.1);
+            }       
+            .container2{
+                top:-30px;
+    
+                display:flex;
+                flex-wrap: wrap;
+                background-color: #34568f;
+
+                padding:10px;
+                justify-content:space-between;
+
+            }
+            .ticket{
+                border:2px solid black;
+                width:400px;
+                position: relative;
+                background-color:white;
+                border-radius:10px;
+                box-shadow:3px 3px 5px black inset;
+                
+            
+    
+        
+
+            
+            }
+            .my{
+                background-color: #34568f;
+                width:100%;
+            }
+            .row1{
+                display:flex;
+                padding:10px;
+            
+            }
+            .row1 pre{
+                display:inline-block;
+                border:2px solid black;
+                font-size: large;
+                width:50;
+                height:30;
+                border-radius:5px;
+                font-family:serif;
+                text-align: center;
+                background-color: gray;
+            }
+            .row2{
+                position: absolute;
+                top:0;
+                right:0;
+            }
+            .row1 .empty{
+                background-color:white;
+                transition-duration:1000s;
+
+            }
+            .row1 .empty:hover{
+                background-color:red;
+                transition-duration:1s;
+                color:white
+
+                
+            }
+            
+
+        .a2{
+            text-decoration:none;
+
+            
+        }
+        .book{
+            text-decoration:none;
+            color:white;
+            display: inline-block;
+            background-color:black ;
+            width:100px;
+            height:30px;
+            padding-top:10px;
+            border-radius:10px;
+            font-size: large;
+
+
+        }
+        .boxes{
+            display:flex;
+        }
+        .b{
+            color:white;
+        }
+        .b::first-letter{
+            color:red;
+        }
+        .my{
+            display:none;
+        }
+        .my:target{
+            display: block;
+        }
+        .bc a{
+                text-decoration:none;
+                font-family:serif;
+                color:white
+
+            }
+            .bc{
+                text-decoration: none;
+                font-family:serif;
+                color: white;
+                background-color: #34568f;
+                display:inline-block;
+                border-radius:10px;
+            }
+        </style>
+
+        
+    </head>
+    <body >
+        <nav>  
+            <div class="t1">USST BUS RESERVATION</div>
+            <ul>
+               <a class="t1a" href="./busmain.html" ><li>home </li></a>
+               <a  class="t1a"href="./aboutus.html"><li>contact</li></a>
+               <a class="t1a" href="./aboutus.html"><li>about us</li></a>
+            </ul>
+
+        </nav>
+
+        <br>
+        <br/>
+    
+        <div class="title">Avilable Buses</div>
+        
+            <div class="t">
+            <div class="bus1">
+                <img src="https://w0.peakpx.com/wallpaper/265/245/HD-wallpaper-temsa-maraton-coach-bus-2020-passenger-bus-passenger-transport-bus-on-the-road-new-buses-temsa.jpg" width="300">
+                <br/>
+                <br/>
+
+                <center><a href="#now"><pre class="t1b">    book a ticket    </pre></a></center>
+                <br/>
+                <center><a href="#now" class="a1"><pre class="t2b">  price:180/-  </pre></a></center>
+            </div>
+
+            <div class="bus1">
+                <img src="https://www.shutterstock.com/image-photo/bus-traveling-on-asphalt-road-600nw-1345741577.jpg" width="280">
+                <br/>
+                <br/>
+
+                <center><a href="#now"><pre class="t1b">    book a ticket    </pre></a></center>
+                <br/>
+                <center><a href="#now" class="a1"><pre class="t2b">  price:210/-  </pre></a></center>
+            </div>
+            <div class="bus1">
+                <img src="https://t3.ftcdn.net/jpg/06/30/73/36/360_F_630733696_tw55bMDN8dgYYhuh2nfa4d36ozyilIzU.jpg" width="280">
+                <br/>
+                <br/>
+
+                <center><a href="#now"><pre class="t1b">    book a ticket    </pre></a></center>
+                <br/>
+                <center><a href="#now" class="a1"><pre class="t2b">  price:270/-  </pre></a></center>
+            </div>
+            <div class="bus1">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/029/305/778/small/moving-forward-bus-travels-on-road-embracing-travel-time-ambiance-ai-generated-photo.jpg" width="280">
+                <br/>
+                <br/>
+
+                <center><a href="#now"><pre class="t1b">    book a ticket    </pre></a></center>
+                <br/>
+                <center><a href="#now" class="a1"><pre class="t2b">  price:280/-  </pre></a></center>
+            </div>
+
+                </div>
+
+        
+        </div>
+        <center>
+        <div class="my" id="now">
+            <h2 class="b">Book a ticket here</h2>
+        <div class="ticket">
+    
+
+        
+        <div class="row1">
+            <div><pre> 1 </h3></div>
+            <div><pre> 2 </h2></div>
+
+        </div>
+        <div class="row1">
+            <div><pre> 5 </h3></div>
+                <div><pre> 6 </h2></div>
+    
+
+        </div>
+        <div class="row1">
+            <div><pre > 9 </h3></div>
+                <div><pre class="empty"> 10 </h2></div>
+    
+
+        </div>
+        <div class="row1">
+            <div><pre> 13 </h3></div>
+                <div><pre class="empty"> 14 </h2></div>
+    
+        </div>
+        <div class="row1">
+            <div><pre class="empty"> 17 </h3></div>
+                <div><pre> 18 </h2></div>
+    
+
+        </div>
+        <div class="row1">
+            <div><pre class="empty"> 21 </h3></div>
+                <div><pre class="empty"> 22 </h2></div>
+    
+
+        </div>
+        
+
+
+
+
+            
+           
+        <div class="row2">
+                
+        <div class="row1">
+            <div><pre> 3 </h3></div>
+            <div><pre> 4</h2></div>
+
+        </div>
+        <div class="row1">
+            <div ><pre> 7 </h3></div>
+                <div><pre> 8 </h2></div>
+    
+
+        </div>
+        <div class="row1">
+            <div ><pre class="empty"> 11 </h3></div>
+                <div><pre> 12 </h2></div>
+    
+
+        </div>
+        <div class="row1">
+            <div><pre> 15 </h3></div>
+                <div><pre class="empty"> 16 </h2></div>
+    
+        </div>
+        <div class="row1">
+            <div><pre> 19 </h3></div>
+                <div><pre class="empty"> 20 </h2></div>
+    
+
+        </div>
+        <div class="row1">
+            <div><pre class="empty"> 23 </h3></div>
+                <div><pre class="empty"> 24 </h2></div>
+    
+
+        </div>
+        </div>
+        <center><div><a href="./booked.html" class="a2"><pre class="book">   Buy  </pre></a></div></center>
+        </div>
+        <br/>
+        <br/>
+        
+        </center>
+        <br/>
+        <center>
+            <div class="bc">
+                <a href="./busmain.html"><pre>    Back    </pre></a>
+            </div>
+            </center>
+        
+ 
+
+                
+    </body>
+    </html>

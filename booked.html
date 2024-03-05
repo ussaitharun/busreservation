@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <style>
+            nav{
+                display:flex;
+                justify-content:space-between;
+                background-color:#34568f;
+
+            
+            }
+            .t1{
+                margin-top:30;
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                margin-left:10px;
+              
+            }
+            .t1::first-letter{
+                color:white;
+                font-size:30px;
+
+            }
+    
+        
+
+            nav ul li{
+                display:inline-block;
+                text-decoration:none;
+                color:white;
+                padding:20px;
+                margin-right:30px;
+                font-family:serif;
+                font-size: larger;
+                transition-duration:1s;
+            
+        
+            
+
+            }
+            nav ul li:hover{
+                
+                border:2px solid black;
+                border-radius:330px 10px 30px 10px;
+                transition-duration:2s;
+                color:#34568f;
+                background-color:white;
+        
+            
+
+            }
+            .bc a{
+                text-decoration:none;
+                font-family:serif;
+                color:white
+
+            }
+            .bc{
+                text-decoration: none;
+                font-family:serif;
+                color: white;
+                background-color: #34568f;
+                display:inline-block;
+                border-radius:10px;
+    
+            }
+            .su{
+                opacity:0;
+                animation-name:pappu7;
+                animation-duration:2s;
+                animation-timing-function: ease;
+                animation-delay:1s;
+                animation-fill-mode:forwards;
+            }
+            @keyframes pappu7 {
+                100%{
+                    opacity:1;
+                    animation-duration:2s;
+                    transform:scale(1.2);
+                    animation-timing-function:ease;
+                    animation-fill-mode:forwards;
+                }
+                
+            }
+            
+        </style>
+        
+    </head>
+    <body >
+        <nav>  
+            <div class="t1">USST BUS RESERVATION</div>
+            <ul>
+               <a class="t1a" href="./busmain.html" ><li>home </li></a>
+               <a  class="t1a"href="./aboutus.html"><li>contact</li></a>
+               <a class="t1a" href="./aboutus.html"><li>about us</li></a>
+            </ul>
+        </nav>
+        <br/>
+        <br/>
+        <div class="su">
+        <div class="status">
+           <center><img src="https://www.citrusfreight.com/assets/img/online_booking_front.webp" width="300"></center>
+            
+        </div>
+        <br/>
+        <center>
+        <div class="bc">
+            <a href="./tickets.html"><pre>    Back    </pre></a>
+        </div>
+        </center>
+        </div>
+        </body>
+        </html>

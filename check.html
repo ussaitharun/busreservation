@@ -1,0 +1,255 @@
+<html>
+    <head>
+        <style>
+            nav{
+                display:flex;
+                justify-content:space-between;
+                background-color:#34568f;
+
+            
+            }
+            .t1{
+                margin-top:30;
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                margin-left:10px;
+              
+            }
+            .t1::first-letter{
+                color:white;
+                font-size:30px;
+
+            }
+    
+        
+
+            nav ul li{
+                display:inline-block;
+                text-decoration:none;
+                color:white;
+                padding:20px;
+                margin-right:30px;
+                font-family:serif;
+                font-size: larger;
+                transition-duration:1s;
+            
+        
+            
+
+            }
+            nav ul li:hover{
+                
+                border:2px solid black;
+                border-radius:330px 10px 30px 10px;
+                transition-duration:2s;
+                color:#34568f;
+                background-color:white;
+            }
+        
+                .avil{
+                
+                font-family:serif;
+                color:white;
+                opacity:0;
+                animation-name:pappu;
+                animation-duration:2s;
+        
+                animation-fill-mode:forwards;
+
+            }
+            @keyframes pappu {
+                
+                100%{
+                    opacity:1;
+                    transform:translateY(30px);
+                    animation-duration:3s;
+                    
+                }
+            }
+                
+
+            .content{
+                background-color: #34568f;
+                height:1000px;
+                position: relative;
+            }
+            .avil .pass{
+                text-decoration:none;
+                font-family:serif;
+                font-size:20px;
+            }
+            img{
+                width:800px;
+                position: absolute;
+                left:25%;
+                animation-name:pappu3;
+                animation-duration:3s;
+                animation-timing-function:ease;
+                animation-iteration-count:infinite;
+                animation-delay:1s;
+                
+            }
+            @keyframes pappu3{
+                100%{
+                    filter:grayscale(100);
+                    animation-duration:4s;
+                    animation-timing-function:ease;
+                }
+                
+            }
+           
+
+           
+            .book a{
+                text-decoration:none;
+                position:relative;
+                right:-710;
+                top:380;
+                display:inline-block;
+                background-color:white;
+                color: #34568f;
+                font-family:serif;
+                font-size:15;
+                border-radius:30px;
+                box-shadow:2px 2px 5px black;
+                transition-duration:1s;
+                
+            }
+            .button1{
+                font-family:sans-serif;
+                font-style:oblique;
+            }
+            .book a:hover{
+                border-radius:20px 3px 20px 3px;
+                transition-duration:2s;
+            }
+            .check{
+                position: absolute;
+                top:800;
+            
+                left:30%;
+                border:2px solid black;
+                width:600;
+                height:250;
+                border-radius: 30px;
+                background-color: white;
+                color:#34568f;
+                box-shadow:2px 2px 5px black inset;
+                
+
+            }
+            .check a{
+                text-decoration: none;
+                color:#34568f;
+                font-family:sans-serif;
+                font-size: larger;
+            
+
+            }
+            
+            
+            .buton2{
+                text-decoration:none;
+                background-color:coral;
+                font-family:sans-serif;
+                display:inline-block;
+                color:white;
+                border-radius:10px;
+                transition-duration:1s;
+               
+            }
+            .buton2:hover{
+                background-color: coral;
+                border-radius:30px 2px 30px 2px;
+                transition-duration:1s;
+            
+                
+            }
+            .pp{
+                width:20px;
+                padding-left:130px;
+            }
+            .m{
+                display: none;
+            }
+            .m:target{
+                display: block;
+            }
+            .pass{
+                margin-left:20px;
+                border-left:5px solid red;
+            }
+            .bc a{
+                text-decoration:none;
+                font-family:serif;
+                color:white
+
+            }
+            .bc{
+                text-decoration: none;
+                font-family:serif;
+                color: white;
+                background-color: #34568f;
+                display:inline-block;
+                border-radius:10px;
+            }
+        
+        </style>
+        
+    </head>
+    <body >
+        <nav>  
+            <div class="t1">USST BUS RESERVATION</div>
+            <ul>
+               <a class="t1a" href="./busmain.html" ><li>home </li></a>
+               <a  class="t1a"href="./aboutus.html"><li>contact</li></a>
+               <a class="t1a" href="./aboutus.html"><li>about us</li></a>
+            </ul>
+        </nav>
+        <br>
+        <br/>
+        <div class="content">
+        <div class="avil">
+            <pre class="pass">"Quickly find the perfect bus for your journey with our 'Check Availability' feature. 
+Enter your origin, destination, and date to instantly view available buses, seats, and prices. 
+Streamline your booking process and plan your travels with ease."</pre>
+<img class=""src="https://www.daimlertruck.com/fileadmin/_processed_/9/d/csm_eb24002_840f1aa969.jpg" width="200">
+<div class="book"><a href="#c"><pre class="button1">     Book here    </pre></a></div>
+
+        </div>
+        </div>
+        <br>
+        <br/>
+        <br/>
+        <center><div class="m" id="c">
+            <div class="check">
+            <h2>check here</h2>
+            <input type="text" placeholder="from"/>
+            <br/>
+            <br/>
+           <img class="pp" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAVFBMVEX///8kiP8AgP8Agv8Uhf/i7v/q8v/X5f/w9v8li//c6/+Iuf+10/+Ctv4Aff+exv/J3/+v0P8Aef/P4/+51v+AtP+JvP40j/+bw//1+f+ly//U4//NA33BAAAFMElEQVR4nO3d63LaMBQEYGElbZqAnQu0Tfv+79nYGDCWZBtr94jp7P5kJhVfzxGSLzNy7u6zfyn9DcjZ+ur/Jm79ZlOA+ByENdK+2nzF71j/fiLPdTXK+zfOSNsOaF/Fx4fNKJ4jbFu0CNFKeAFaE42E+3o4RGU5F22EwwpaV9FEOAaaEi2E+2o8huWiYSDc1iHQcC7yhWGL9uMYNSpdmAKazUW2cB9t0X4kk0YlC7eRHxnjKnKF6Ra1I1KFc0ATIlMYXyZGRPpcJArnK9gNx64iT7gMyG9UmjC2VUtUkduoLOGSOXiuIpVIEi5t0X5IZqNyhLcBuXORIpzaqiWIvEZlCKe3atZVJAhvbVEyES9cB+QR4cJblokRkTMX0cI1c/A8MqWKYOHaFj2G0qhYYU4Fu7EJjQoV5gIpVUQKky0ajBH9iEQECpMV9D9/BcDfZkScMLlMVI37EXz2/JEqOHrRgAmTLeob9xQKv7tXoyqihI/JFm1cXJgm1tt7FLq3OLH+AiaE7jVednCbAudhjFi1wJTQReciek0E/pa+hd/Xd8CkMNao8EUfuR4GxGMFJ4QhEb+rge5pRnPxBJwQjhuVcH1B3Jf6E3BK6D6GX8Af8jSxgK8tBo16AU4Kh41KuXOKvj48N2p1AU4LL4tGRagg4xq/CoAzwtNcJN37xt+n6RrVD4FzwmOjMuZgG8K9ti/iNXBW2BJpTy8Y90vf3q+B80L3WpMqSLrnPfr6C4SO9larzVtfC4S8SAiJhNRICImE1EgIiYTUSAiJhNRICImE1EgIiYTUSAiJhNRICImE1EgIiYTUSAiJhNRICImE1EgIiYTUSAiJhNRICImE1EgIiYTUSAiJhNRICImE1EgIiYTUSAiJhNRICImE1EgIiYTUSAiJhNRICImE1EgIiYTUSAiJhNRICImE1EgIiYTUSAiJhNRICImE1EgIiYTUSAiJhNRICImE1EgIiYTUSAiJhNRICImE1EgIiYTUSAiJhNRICImE1EgIiYTUSAiJhNCMz8ZaIMz/MpbCQ/16/cG8sHl/yx3VULjzm4dr4qyw8RufS7QTHtqjCa+Jc8KmO80wk2gmPPRnRX4MPpsRNv2JlHnnSFsJD6cjQv2gitPC5nyqaFYVjYS7yzGvg0adFDaDk2FziDbCw/Bo4UujTgmb4Z/kNKqJcHd93PKZOCFsRic0r6+ihXA3PjL7NBfTwmZ8Vvr6RjUQBsDzXEwKm8hJ6WuJfGEEeGrUlDACXD8X6cLduN96SlvFhLCpo3+yci6yhdv4tz02alwYrWD3zR7vUehe4jXsiFFhEujXtanBPEwR/ce3UPgZ/IqeUt/rPJyq4p/ws+T/x+pF32I9TBMXfdRlZYs6oz1Nkrg4Gds2m31pdE20AVpdW+RVcX2LOrvrw5eMKuZdAptd4yd/JGezdpnoY3efZm2jZrWoM73Xto6YCzS9X7qGmHkbyhnf8759Ltb77EFtn1vcWsXsFnXmT2ZuWzQQQPNnT7c0auYy0cf86dryDVyVPwfb2D8/XDoXIS3qijwhXTYXUcAiz4CXzEXMHGxT5Cn3fKPCKljqOf4cEQgs9abCNDF/qzZIqXcxphYNwFZtkGJvm6SriGxRV/J9mtSiAQaWfGMovmjglok+Jd+Jis1F0FZtkKJvfYVzEd2irrAwIBKAhYWjuYhdJvoUFl5VkVHB8sIBkQMsLzwToVu1QZ58XV3n/S9npGSOiwZ+mTjlOcgna6hU2iqSWvRe8lL958AvIq1FcfkHjkpXzfPzYAgAAAAASUVORK5CYII=" width="10"/>
+            <br/>
+           <br/><input type="text" placeholder="to"/>
+           <br/>
+           <br/>
+    
+            <input type="date">
+            <input type="time"><select>
+                <option>AM</option>
+                <option>PM</option>
+            </select>
+            <br/>
+            <br/>
+           <center><a href="./tickets.html"><pre class="buton2">    Check Availability    </pre> </a></center>
+            
+
+        </div>
+    </div></center>
+    <center>
+        <div class="bc">
+            <a href="./busmain.html"><pre>    Back    </pre></a>
+        </div>
+        </center>
+
+        
+        </body>
+        </html>

@@ -1,0 +1,219 @@
+<html>
+    <head>
+        <style>
+            nav{
+                display:flex;
+                justify-content:space-between;
+                background-color:#34568f;
+
+            
+            }
+            .t1{
+                margin-top:30;
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                margin-left:10px;
+              
+            }
+            .t1::first-letter{
+                color:white;
+                font-size:30px;
+
+            }
+    
+        
+
+            nav ul li{
+                display:inline-block;
+                text-decoration:none;
+                color:white;
+                padding:20px;
+                margin-right:30px;
+                font-family:serif;
+                font-size: larger;
+                transition-duration:1s;
+            
+        
+            
+
+            }
+            nav ul li:hover{
+                
+                border:2px solid black;
+                border-radius:330px 10px 30px 10px;
+                transition-duration:2s;
+                color:#34568f;
+                background-color:white;
+        
+            
+
+            }
+            .content{
+                background-color: #34568f;
+                height:1000px;
+                position:relative;
+            }
+            .des{
+                
+                font-family:serif;
+                color:white;
+                opacity:0;
+                animation-name:pappu;
+                animation-duration:2s;
+        
+                animation-fill-mode:forwards;
+
+            }
+            @keyframes pappu {
+                
+                100%{
+                    opacity:1;
+                    transform:translateY(30px);
+                    animation-duration:3s;
+                    
+                }
+            }
+                
+            img{
+                position: absolute;
+                display:inline-block;
+                float:right;
+                width:650px;
+                top:0;
+            
+                right:0;
+                opacity:0;
+                animation-name:pappu2;
+                animation-duration:2s;
+                animation-delay:0.9s;
+    
+                animation-fill-mode:forwards;
+            }
+            @keyframes pappu2 {
+                50%{
+                    filter: blur(10px);
+                    filter:grayscale(100);
+                    border-radius:330px 10px 30px 10px;
+                }
+                75%{
+                    filter:blur(5px);
+                    filter:grayscale(100);
+                }
+                100%{
+                    opacity:1;
+                    border-radius:330px 10px 30px 10px;
+                }
+                
+                
+                100%{
+                    opacity:1;
+                    animation-duration:3s;
+                    animation-timing-function:ease;
+                    transform: translateX(-30px);
+                    
+                }
+                
+            }
+            .signup{
+                border:2px solid black;
+                width:300px;
+                top:100;
+                display:inline-block;
+                float:center;
+                justify-content: center;
+                background-color:white;
+                color: #34568f;
+                border-radius:20px;
+                box-shadow:3px 3px 5px black inset;
+            }
+            .button{
+                text-decoration:none;
+                display:inline-block;
+                background-color: #34568f;
+                color:white;
+                width:100px;
+                height:20px;
+                text-align: center;
+                border-radius:30px;
+                font-family: serif;
+                transition-duration:1s;
+            }
+            .button:hover{
+                border-radius:20px 3px 20px 3px;
+                transition-duration:1s;
+                box-shadow:3px 3px 5px 2px black;
+            }
+            .hi{
+                border-left:5px solid red;
+                display: inline-block;
+            }
+            .hi::first-letter{
+                font-size:20px;
+            }
+            
+        </style>
+        
+    </head>
+    <body >
+        <nav>  
+            <div class="t1">USST BUS RESERVATION</div>
+            <ul>
+               <a class="t1a" href="./busmain.html" ><li>home </li></a>
+               <a  class="t1a"href="./aboutus.html"><li>contact</li></a>
+               <a class="t1a" href="./aboutus.html"><li>about us</li></a>
+            </ul>
+        </nav>
+        <br/>
+        <br/>
+        <div class="content">
+        <pre class="des">
+
+        "Welcome to our comprehensive bus booking platform, where convenience meets reliability. 
+        
+        Our webpage offers a seamless experience for users looking to plan their journeys hassle-free. 
+        
+        With an intuitive interface, users can effortlessly search for available routes, compare prices, 
+        
+        another advantage is user  book their tickets in just a few clicks.
+                
+        We prioritize user satisfaction and safety above all else. Our platform ensures secure transactions and
+        
+        provides real-time updates on bus schedules, ensuring peace of mind for travelers. 
+        
+        Whether it's a short commute or a long-distance trip, 
+        
+        our webpage caters to diverse needs with a wide range of routes and bus operators.
+                
+        To enhance the user experience further, we offer customizable filters
+        
+        for preferences such as departure time, bus type, and amenities, allowing travelers to tailor 
+        
+        their journey according to their preferences. Additionally,  With a commitment to excellence, 
+        
+        we strive to continually we will make your day better
+        
+        embracing technological advancements to provide an unmatched booking experience.
+        
+        Trust us to be your go-to destination for all your bus travel needs."</p>
+
+
+        <div><img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnVzfGVufDB8fDB8fHww" width="500"></div>
+<br/>
+<center>
+<div class="signup">
+    <h3>Log-in/sign-in</h3>
+    <br/>
+
+    <input type="text" placeholder="username ">
+    <br>
+    <input  type="password" placeholder="password">
+    <a href="./check.html"><pre class="button">  submit  </pre></a>
+    </div></center>
+
+
+</div>
+<br/>
+<br/>
+<br/>
+<center><div class="hi">Have a greate journey</div></center>
+    </body>
+</html>
